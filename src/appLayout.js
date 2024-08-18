@@ -1,5 +1,6 @@
 import styles from './app.module.css';
 import { FieldContainer, InformationContainer } from './components';
+import PropTypes from 'prop-types';
 
 export const AppLayout = ({ ...props }) => {
 	return (
@@ -13,4 +14,8 @@ export const AppLayout = ({ ...props }) => {
 			/>
 		</>
 	);
+};
+
+AppLayout.propTypes = {
+	props: PropTypes.object,
 };

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { AppLayout } from './appLayout';
-import { PropTypes } from 'prop-types';
 
 export const App = () => {
 	const fieldArray = ['', '', '', '', '', '', '', '', ''];
@@ -23,16 +22,4 @@ export const App = () => {
 	};
 
 	return <AppLayout {...props} />;
-};
-
-App.propTypes = {
-	currentPlayer: PropTypes.string,
-	setCurrentPlayer: PropTypes.func,
-	isGameEnded: PropTypes.bool,
-	setisGameEnded: PropTypes.func,
-	isDraw: PropTypes.bool,
-	setisDraw: PropTypes.func,
-	field: PropTypes.array,
-	setField: PropTypes.func,
-	fieldArray: PropTypes.array,
 };

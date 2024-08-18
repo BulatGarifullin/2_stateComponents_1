@@ -1,5 +1,5 @@
 import { InformationLayout } from './informationLayout';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const InformationContainer = ({ isDraw, isGameEnded, currentPlayer }) => {
 	return (

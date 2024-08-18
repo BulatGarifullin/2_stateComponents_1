@@ -1,4 +1,5 @@
 import styles from './field.module.css';
+import PropTypes from 'prop-types';
 
 export const FieldLayout = ({ field, playersMove, isDraw, isGameEnded, startOver }) => {
 	return (
@@ -21,4 +22,12 @@ export const FieldLayout = ({ field, playersMove, isDraw, isGameEnded, startOver
 			</div>
 		</div>
 	);
+};
+
+FieldLayout.propTypes = {
+	field: PropTypes.array,
+	playersMove: PropTypes.func,
+	isDraw: PropTypes.bool,
+	isGameEnded: PropTypes.bool,
+	startOver: PropTypes.func,
 };
