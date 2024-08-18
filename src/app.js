@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { AppLayout } from './appLayout';
-import { FieldContainer, InformationContainer } from './components';
 import { PropTypes } from 'prop-types';
 
 export const App = () => {
@@ -23,22 +22,7 @@ export const App = () => {
 		fieldArray,
 	};
 
-	return (
-		<>
-			<AppLayout />
-			<FieldContainer
-				// field={field}
-				// currentPlayer={currentPlayer}
-				// setField={setField}
-				{...props}
-			/>
-			<InformationContainer
-				isDraw={isDraw}
-				isGameEnded={isGameEnded}
-				currentPlayer={currentPlayer}
-			/>
-		</>
-	);
+	return <AppLayout {...props} />;
 };
 
 App.propTypes = {
